@@ -1,0 +1,149 @@
+<html>
+ <head>
+  <title>Автосалон "Добрыня"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Автосалон "Добрыня"">
+  <link rel="shortcut icon" href="zxc.png" type="image/x-icon">
+  <link rel="stylesheet" href="Первый.css">
+<script>
+$(function() {
+if ($(window).width() <= 710){
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+}
+});
+</script>
+</script>
+ </head>
+ <body>
+	<header >
+		<div class="header">
+			<span class="name">Автосалон "Добрыня"</span>
+			<span ><a href="Первый файл.html"><img class="homelink" src="vsh.jpg"></a></span>
+			<nav>
+				<div class="menu">
+					<a class="menu-triger" href="#"></a><span class="invisible">Меню</span>
+					<div class="menu-popup">
+						<a class="menu-close" href="#"></a><span class="invisible">Меню</span>
+						<ul class="hr">
+							<li><a href="Информация.html" class="words"> >>Автосалон В городе Тольятти.</a></li>
+							
+							<li><a href="Подключение.html"class="words">>>Мерены по скидке.</a></li>
+							
+							<li><a href="Поддержка.html"class="words">>>Обратная связь.</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="body">
+	<table class="podkl">
+	<thead>
+	<tr><th>Автомобиль</th><th>Лошадиные силы</th><th>Ценна</th></tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/new-e-class-coupe/589493">Mercedes-Benz E 200 4MATIC Sport Купе</a></td>
+	<td data-label="Л/C">197 </td>
+	<td data-label="Ценна">4 981 425 ₽</td>
+	</tr>
+	<tr>
+<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/new-e-class-coupe/589486">Mercedes-Benz E 300 Sport Купе</a></td>
+	<td data-label="Л/C">200 </td>
+	<td data-label="Ценна">5 622 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/c-class-coupe/603937">Mercedes-Benz Mercedes-AMG C 43 4MATIC Купе Особая Серия</a></td>
+	<td data-label="Л/C">390 </td>
+	<td data-label="Ценна">6 329 600 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/GT4/595187">Mercedes-Benz Mercedes-AMG GT 63 S 4MATIC+</a></td>
+	<td data-label="Л/C">639 </td>
+	<td data-label="Ценна">16 500 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/new-gle/604853">Mercedes-Benz Mercedes-AMG GLE 63 S 4MATIC+ OS</a></td>
+	<td data-label="Л/C">612 </td>
+	<td data-label="Ценна">13 200 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/maybach-gls/610452">Mercedes-Benz Mercedes-Maybach GLS 600 4MATIC</a></td>
+	<td data-label="Максимальная скорость">558 </td>
+	<td data-label="Ценна">18 936 340 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/c-class-sedan/594996">Mercedes-Benz C 300 e 4MATIC Avantgarde Седан</a></td>
+	<td data-label="Максимальная скорость">211 </td>
+	<td data-label="Ценна">4 888 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/new-s-class-sedan/619859">Mercedes-Benz S 350 d 4MATIC LIMITED</a></td>
+	<td data-label="Максимальная скорость">249</td>
+	<td data-label="Ценна">11 759 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/glc-suv/615898">Mercedes-Benz GLC 200 4MATIC Premium</a></td>
+	<td data-label="Максимальная скорость">197 </td>
+	<td data-label="Ценна">4 150 000 ₽</td>
+	</tr>
+	<tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/glb-suv/625965">Mercedes-Benz GLB 250 4MATIC Sport</a></td>
+	<td data-label="Максимальная скорость">224 </td>
+	<td data-label="Ценна">4 300 000 ₽</td>
+	</tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/model/gls-x167/611396">Mercedes-Benz GLS 400 d 4MATIC Luxury</a></td>
+	<td data-label="Максимальная скорость">330 </td>
+	<td data-label="Ценна">9 990 000 ₽</td>
+	</tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/UsedCars/85586">Mercedes-Benz G 500</a></td>
+	<td data-label="Максимальная скорость">300</td>
+	<td data-label="Ценна">2 794 000 ₽</td>
+	</tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/UsedCars/93869">Mercedes-Benz S 500 4MATIC</a></td>
+	<td data-label="Максимальная скорость">388 </td>
+	<td data-label="Ценна">1 160 000 ₽</td>
+	</tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/UsedCars/93869">Mercedes-Benz G 55 AMG</a></td>
+	<td data-label="Максимальная скорость">500 </td>
+	<td data-label="Ценна">2 633 000 ₽</td>
+	</tr>
+	<td data-label="Автомобиль"><a href="https://cars.mercedes-benz.ru/UsedCars/93869">Mercedes-Benz G 320</a></td>
+	<td data-label="Максимальная скорость">224 </td>
+	<td data-label="Ценна">2 690 000 ₽</td>
+	</tbody>
+	</table>
+	</p>
+	
+	<p>
+		<table style="width: 100%; border-spacing: 0; border: none;">
+		<tr>
+			<td style="width: 50%; text-align: left;"><a href="Информация.html"><<Предыдущая страница </a></td>
+			<td style="width: 50%; text-align: right;"><a href="Поддержка.html">Продолжить чтение>></a></td>
+		</tr>
+	</p>
+	</div>
+	<div id="footer">
+			<div id="copy">
+			Copyright &copy; 2021. All rights reserved
+			</div>
+</body>
+</html>

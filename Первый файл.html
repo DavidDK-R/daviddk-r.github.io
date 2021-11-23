@@ -1,0 +1,83 @@
+﻿<html>
+ <head>
+  <title>Автосалон "Добрыня"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Автосалон "Добрыня"">
+  <link rel="shortcut icon" href="zxc.png" type="image/x-icon">
+  <link rel="stylesheet" href="Первый.css">
+<script>
+$(function() {
+if ($(window).width() <= 710){
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+}
+});
+</script>
+</script>
+ </head>
+ <body>
+	<header >
+		<div class="header">
+			<span class="name">Автосалон "Добрыня"</span>
+			<span ><a href="Первый файл.html"><img class="homelink" src="vsh.jpg"></a></span>
+			<nav>
+				<div class="menu">
+					<a class="menu-triger" href="#"></a><span class="invisible">Меню</span>
+					<div class="menu-popup">
+						<a class="menu-close" href="#"></a><span class="invisible">Меню</span>
+						<ul class="hr">
+							<li><a href="Информация.html" class="words"> >>Автосалон В городе Тольятти.</a></li>
+							
+							<li><a href="Подключение.html"class="words">>>Мерены по скидке.</a></li>
+							
+							<li><a href="Поддержка.html"class="words">>>Обратная связь.</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="body">
+	<h1>
+	Главная страница
+	</h1>
+	<div class="mainconten_main">
+	<p>Приветствую вас на гласной странице Автосалон "Добрыня".</p>
+	<p>Здесь вы найдете всю информацию о Автосалоне "Добрыня". Также вы можете связаться с Нами, вся информация находится в разделе контакты.
+	</p>
+	<p>
+	<table style="border: none; text-align:left;">
+	Содержание
+	<ul>
+			<tr><td ><li><a href="Информация.html" class="words1">Автосалон В городе Тольятти.</a></li></td></tr>
+			<tr><td ><li><a href="Подключение.html"class="words1">Мерены по скидке.</a></li></td></tr>
+			<tr><td ><li><a href="Поддержка.html"class="words1">Обратная связь</a></li></td></tr>			
+			
+	</ul>
+	</table>
+	</p>
+	</div>
+	<div id="footer">
+			<div id="copy">
+			Copyright &copy; 2021. All rights reserved
+			</div>
+	</div>
+</body>
+</html>

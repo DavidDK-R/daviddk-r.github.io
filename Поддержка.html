@@ -1,0 +1,84 @@
+<html>
+ <head>
+  <title>Автосалон "Добрыня"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Автосалон "Добрыня"">
+  <link rel="shortcut icon" href="zxc.png" type="image/x-icon">
+  <link rel="stylesheet" href="Первый.css">
+<script>
+$(function() {
+if ($(window).width() <= 710){
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+}
+});
+</script>
+</script>
+ </head>
+ <body>
+	<header >
+		<div class="header">
+			<span class="name">Автосалон "Добрыня"</span>
+			<span ><a href="Первый файл.html"><img class="homelink" src="vsh.jpg"></a></span>
+			<nav>
+				<div class="menu">
+					<a class="menu-triger" href="#"></a><span class="invisible">Меню</span>
+					<div class="menu-popup">
+						<a class="menu-close" href="#"></a><span class="invisible">Меню</span>
+						<ul class="hr">
+							<li><a href="Информация.html" class="words"> >>Автосалон В городе Тольятти.</a></li>
+							
+							<li><a href="Подключение.html"class="words">>>Мерены по скидке.</a></li>
+							
+							<li><a href="Поддержка.html"class="words">>>Обратная связь.</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="body">
+	<h1>
+	Контакты Автосалона.
+	</h1>
+	<div class="maincontent_support">
+	<p>
+	<a href="https://www.youtube.com/watch?v=lbv3dzHGR2Q">	Если возникли вопросы или появилась проблема</a>.
+	</p>
+	<p>
+	Номер: 88005553535
+	</p>
+	<p>
+	Почта: Daw.hoziainov@yandex.ru
+	</p>
+	<p>
+		<table style="width: 100%; border-spacing: 0; border: none;">
+		<tr>
+			<td style="width: 50%; text-align: left;"><a href="Подключение.html"><<Предыдущая страница </a></td>
+		</tr>
+	</p>
+	</div>
+	<div id="footer">
+			<div id="copy">
+			Copyright &copy; 2021. All rights reserved
+			</div>
+	</div>
+</body>
+</html>
